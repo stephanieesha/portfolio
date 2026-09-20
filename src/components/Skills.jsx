@@ -1,0 +1,41 @@
+import { SiCypress, SiSelenium, SiPython, SiTypescript, SiJavascript, SiReact } from 'react-icons/si'
+import { FaClipboardList, FaChalkboardTeacher, FaSyncAlt, FaVial, FaRobot, FaTheaterMasks } from 'react-icons/fa'
+import { skillGroups } from '../data/content'
+
+const ICONS = {
+  'Playwright': FaTheaterMasks,
+  'Cypress': SiCypress,
+  'Selenium': SiSelenium,
+  'API Testing': FaVial,
+  'Claude API': FaRobot,
+  'Python': SiPython,
+  'TypeScript': SiTypescript,
+  'JavaScript': SiJavascript,
+  'React': SiReact,
+  'Test Strategy': FaClipboardList,
+  'Mentoring': FaChalkboardTeacher,
+  'Agile / Scrum (PSM I)': FaSyncAlt,
+}
+
+const flatSkills = skillGroups.flatMap((g) => g.items)
+
+export default function Skills() {
+  return (
+    <section id="skills" className="skills-section">
+      <div className="container">
+        <h2 className="section-title-serif">Skills</h2>
+        <div className="skills-pill-grid">
+          {flatSkills.map((item) => {
+            const Icon = ICONS[item]
+            return (
+              <div key={item} className="skill-pill">
+                {Icon && <span className="skill-pill-icon-circle"><Icon /></span>}
+                <span>{item}</span>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}

@@ -1,0 +1,50 @@
+:root {
+  --bg: #0D2123;
+  --cream: #FBF9EB;
+  --paper: #FAFAFA;
+  --ink: #14201D;
+  --ink-soft: #4A5A4F;
+  --red: #DA1E33;
+  --line: #E4E0D0;
+  --line-dark: #33463E;
+  --pill-bg: #0D2123;
+
+  --font-display: 'Times New Roman', Times, serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+}
