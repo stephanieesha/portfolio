@@ -24,10 +24,10 @@ export default function Hero() {
 
         <div className="hero-center">
           <h1 className="hero-headline">Hello, I'm Stephanie.</h1>
-          <p className="hero-subheadline">Senior QA Automation Lead</p>
+          <p className="hero-subheadline">Senior QA Lead</p>
           <p className="hero-body">
             I lead QA strategy, build automation frameworks, leverage AI-powered
-            testing practices, and ship real software alongside the teams I test for.
+            testing practices, and ship software that solve real world problems.
           </p>
         </div>
 
