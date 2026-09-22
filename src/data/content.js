@@ -1,4 +1,4 @@
-export const automationApps = [
+export const qaApps = [
   {
     name: 'Flaky Test Detector & Auto-Quarantine System',
     image: '/screenshots/flaky-test-detector.png',
@@ -14,6 +14,7 @@ export const automationApps = [
     leadership: 'Built to flag ambiguous requirements before development starts, not just after - the kind of gap that costs a team a sprint if QA catches it too late.',
     stack: ['Python', 'Flask', 'Claude API', 'Jira REST API'],
     link: 'https://github.com/stephanieesha/ai-test-case-generator',
+    liveUrl: 'https://test-case-generator-ro2z.onrender.com/',
   },
   {
     name: 'Accessibility Audit Tracker',
@@ -22,6 +23,7 @@ export const automationApps = [
     leadership: 'Most QA portfolios have zero accessibility work. This exists because compliance and usability aren\u2019t a separate workstream from quality - they\u2019re part of it.',
     stack: ['Playwright', 'axe-core', 'TypeScript', 'Python', 'Flask'],
     link: 'https://github.com/stephanieesha/accessibility-audit-tracker',
+    liveUrl: 'https://accessibility-audit-tracker.onrender.com/',
   },
   {
     name: 'Quality Metrics Dashboard',
@@ -30,13 +32,15 @@ export const automationApps = [
     leadership: 'Built for the conversation this enables with engineering leads: not "how many bugs" but "why," which is the version of the data that actually changes what a team does next.',
     stack: ['Python', 'Flask', 'Chart.js'],
     link: 'https://github.com/stephanieesha/quality-metrics-dashboard',
+    liveUrl: 'https://quality-metrics-dashboard.onrender.com/',
   },
   {
     name: 'Subscription Tracker',
     image: '/screenshots/subscription-tracker.png',
     description: 'Tracks recurring subscriptions with correct billing-cycle math across weekly/monthly/yearly - the kind of date arithmetic that\u2019s easy to get subtly wrong (month-end rollovers, leap years) if you\u2019re not deliberate about it.',
     stack: ['Python', 'Flask', 'SQLite'],
-    link: 'https://github.com/stephanieesha',
+    link: 'https://github.com/stephanieesha/subscription-tracker',
+    liveUrl: 'https://subscription-tracker-l8dq.onrender.com/',
   },
   {
     name: 'Meal Planner',
@@ -44,7 +48,8 @@ export const automationApps = [
     description: 'Generates a personalized, region-appropriate weekly meal plan with real portion scaling and a hard safety floor on calorie targets - accounts, a personal food library with USDA nutrition lookup, and an editable plan table.',
     leadership: 'A full-stack build with real user accounts and data integrity concerns, not a toy app - the same rigor as the QA tooling, applied somewhere with no test suite requirement forcing it.',
     stack: ['Python', 'Flask', 'SQLite', 'Claude API'],
-    link: 'https://github.com/stephanieesha',
+    link: 'https://github.com/stephanieesha/Fitness_Meal_Planner',
+    liveUrl: 'https://meal-planner-ioeg.onrender.com/',
   },
   {
     name: 'Recipe Organizer',
@@ -52,7 +57,8 @@ export const automationApps = [
     description: 'Saves recipes from TikTok/Instagram links, extracting ingredients and directions with AI where the platform\u2019s terms actually allow it - and being upfront in the product itself about where they don\u2019t.',
     leadership: 'Checked both platforms\u2019 real API terms before writing a line of code, rather than assuming a plan would work - that verification step is the difference between a demo and something real.',
     stack: ['Python', 'Flask', 'SQLite', 'Claude API'],
-    link: 'https://github.com/stephanieesha',
+    link: 'https://github.com/stephanieesha/recipie-organizer',
+    liveUrl: 'https://recipie-organizer.onrender.com/',
   },
   {
     name: 'Shirly 2.0',
@@ -60,6 +66,7 @@ export const automationApps = [
     description: 'A rebuild of my original shopping-price tracker: shopping lists, price history per item, and spend tracking. This is the live app all four QA tools above actually test against.',
     stack: ['React', 'Redux', 'Express', 'Node', 'MongoDB'],
     link: 'https://github.com/stephanieesha/Shirly2.0',
+    liveUrl: 'https://shirly2-0.onrender.com/',
   },
   {
     name: 'Shirly',
@@ -74,6 +81,45 @@ export const automationApps = [
     description: 'A card-matching memory game built during the She Code Africa Cohort 2 mentoring program.',
     stack: ['JavaScript', 'HTML', 'Bootstrap'],
     link: 'https://github.com/stephanieesha/Brain_Teaser',
+    liveUrl: 'https://stephanies-brain-teaser.netlify.app/',
+  },
+]
+
+export const testAutomation = [
+  {
+    name: 'Recipe Organizer E2E Tests',
+    image: '/screenshots/recipe-organizer-e2e-tests.png',
+    description: 'Playwright + TypeScript suite in Page Object Model, run against the live deployed app: link validation, bulk import, category assignment, and an AI-extraction cleanup fixture that only removes what each test created.',
+    stack: ['Playwright', 'TypeScript', 'Page Object Model'],
+    link: 'https://github.com/stephanieesha/recipie-organizer-e2e-tests',
+  },
+  {
+    name: 'Meal Planner E2E Tests',
+    image: '/screenshots/meal-planner-e2e-tests.png',
+    description: '74 Playwright tests against the live meal planner: account creation and login, plan generation against real calorie targets, Apple Health export parsing, and manual/screenshot activity entry.',
+    stack: ['Playwright', 'TypeScript', 'Page Object Model'],
+    link: 'https://github.com/stephanieesha/meal_planner-e2e-tests',
+  },
+  {
+    name: 'Shirly 2.0 E2E Tests',
+    image: '/screenshots/shirly2-e2e-tests.png',
+    description: '108 tests covering categories, items, the shopping list, and the API directly, run against the live deployed app across Chromium, Firefox, and WebKit.',
+    stack: ['Playwright', 'TypeScript', 'Page Object Model'],
+    link: 'https://github.com/stephanieesha/Shirly2.0-e2e-tests',
+  },
+  {
+    name: 'AI Test Case Generator E2E Tests',
+    image: '/screenshots/ai-test-case-generator-e2e.png',
+    description: 'Cypress suite for the test case generator, recorded to Cypress Cloud: BDD/step-by-step generation, the Jira fetch flow, and a design spec that fails on a copy of the old UI.',
+    stack: ['Cypress', 'TypeScript', 'Cypress Cloud'],
+    link: 'https://github.com/stephanieesha/AI-Test-Case-Generator-e2e-test',
+  },
+  {
+    name: 'Shirly Tests',
+    image: '/screenshots/shirly-tests.png',
+    description: 'The original Cypress suite written against the first version of Shirly, kept as the starting point the later Playwright suites built on.',
+    stack: ['Cypress', 'JavaScript'],
+    link: 'https://github.com/stephanieesha/Shirly_Tests',
   },
 ]
 

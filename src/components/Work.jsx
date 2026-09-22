@@ -1,19 +1,20 @@
 import { useState, useEffect, useCallback } from 'react'
 import { FaGithub, FaLink, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import { manualTestingTemplates, automationApps } from '../data/content'
+import { manualTestingTemplates, testAutomation, qaApps } from '../data/content'
 
-const TABS = ['Manual Testing', 'Automation & Apps']
+const TABS = ['Manual Testing', 'Test Automation', 'QA Apps']
 
 export default function Work() {
-  const [activeTab, setActiveTab] = useState('Automation & Apps')
+  const [activeTab, setActiveTab] = useState('QA Apps')
   const [lightboxIndex, setLightboxIndex] = useState(null)
 
   // Only items with a real image can be enlarged - the manual testing
   // cards without a screenshot link out instead, so they're excluded
   // from the lightbox's navigable list.
+  const richItems = activeTab === 'Test Automation' ? testAutomation : qaApps
   const lightboxItems = activeTab === 'Manual Testing'
     ? manualTestingTemplates.filter((t) => t.image)
-    : automationApps
+    : richItems
 
   const closeLightbox = useCallback(() => setLightboxIndex(null), [])
   const showPrev = useCallback(
@@ -50,7 +51,7 @@ export default function Work() {
             <button
               key={tab}
               className={`tab-button ${activeTab === tab ? 'tab-active' : ''}`}
-              onClick={() => setActiveTab(tab)}
+              onClick={() => { setActiveTab(tab); setLightboxIndex(null) }}
             >
               {tab}
             </button>
@@ -85,7 +86,7 @@ export default function Work() {
           </div>
         ) : (
           <div className="project-grid">
-            {automationApps.map((p, i) => (
+            {richItems.map((p, i) => (
               <div key={p.name} className="project-card">
                 <div className="project-image-frame project-image-clickable" onClick={() => setLightboxIndex(i)}>
                   <img src={p.image} alt={p.name} className="project-image" />
@@ -93,8 +94,14 @@ export default function Work() {
                 <div className="project-title-row">
                   <h3 className="project-title">{p.name}</h3>
                   <div className="project-title-icons">
-                    <a href={p.link} target="_blank" rel="noreferrer"><FaLink className="project-icon" /></a>
-                    <a href={p.link} target="_blank" rel="noreferrer"><FaGithub className="project-icon" /></a>
+                    {p.liveUrl && (
+                      <a href={p.liveUrl} target="_blank" rel="noreferrer" title="Live site">
+                        <FaLink className="project-icon" />
+                      </a>
+                    )}
+                    <a href={p.link} target="_blank" rel="noreferrer" title="Source code">
+                      <FaGithub className="project-icon" />
+                    </a>
                   </div>
                 </div>
                 <p className="project-desc">{p.description}</p>
