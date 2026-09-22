@@ -134,8 +134,8 @@ export const manualTestingTemplates = [
 export const skillGroups = [
   { label: 'Leadership', items: ['Test Strategy', 'Mentoring', 'Agile / Scrum (PSM I)'] },
   { label: 'Automation & Testing', items: ['Playwright', 'Cypress', 'Selenium', 'API Testing'] },
-  { label: 'AI-Assisted QA', items: ['Claude API'] },
-  { label: 'Languages & Frameworks', items: ['Python', 'TypeScript', 'JavaScript', 'React'] },
+  { label: 'Languages & Frameworks', items: ['Python', 'TypeScript', 'JavaScript', 'React', 'SQL'] },
+  { label: 'Testing Practices', items: ['Manual Testing', 'Functional Testing', 'Accessibility Testing', 'Performance Testing'] },
 ]
 
 export const writing = [

@@ -1,5 +1,8 @@
 import { SiCypress, SiSelenium, SiPython, SiTypescript, SiJavascript, SiReact } from 'react-icons/si'
-import { FaClipboardList, FaChalkboardTeacher, FaSyncAlt, FaVial, FaRobot, FaTheaterMasks } from 'react-icons/fa'
+import {
+  FaClipboardList, FaChalkboardTeacher, FaSyncAlt, FaVial, FaTheaterMasks,
+  FaDatabase, FaClipboardCheck, FaCheckDouble, FaUniversalAccess, FaTachometerAlt,
+} from 'react-icons/fa'
 import { skillGroups } from '../data/content'
 
 const ICONS = {
@@ -7,14 +10,18 @@ const ICONS = {
   'Cypress': SiCypress,
   'Selenium': SiSelenium,
   'API Testing': FaVial,
-  'Claude API': FaRobot,
   'Python': SiPython,
   'TypeScript': SiTypescript,
   'JavaScript': SiJavascript,
   'React': SiReact,
+  'SQL': FaDatabase,
   'Test Strategy': FaClipboardList,
   'Mentoring': FaChalkboardTeacher,
   'Agile / Scrum (PSM I)': FaSyncAlt,
+  'Manual Testing': FaClipboardCheck,
+  'Functional Testing': FaCheckDouble,
+  'Accessibility Testing': FaUniversalAccess,
+  'Performance Testing': FaTachometerAlt,
 }
 
 const flatSkills = skillGroups.flatMap((g) => g.items)
