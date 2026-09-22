@@ -14,7 +14,6 @@ export default function Footer() {
 
           <div className="contact-details">
             <a href={`mailto:${social.email}`}>{social.email}</a>
-            <a href={social.resume} target="_blank" rel="noreferrer">Resume</a>
           </div>
 
           <p className="contact-location">{social.location}</p>
