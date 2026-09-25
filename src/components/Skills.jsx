@@ -2,7 +2,7 @@ import { SiCypress, SiSelenium, SiPython, SiTypescript, SiJavascript, SiReact } 
 import {
   FaClipboardList, FaChalkboardTeacher, FaSyncAlt, FaVial, FaTheaterMasks,
   FaClipboardCheck, FaCheckDouble, FaUniversalAccess, FaTachometerAlt,
-  FaExchangeAlt, FaShieldAlt, FaLayerGroup, FaTasks,
+  FaDatabase, FaExchangeAlt, FaShieldAlt, FaLayerGroup, FaTasks,
 } from 'react-icons/fa'
 import { skillGroups } from '../data/content'
 
