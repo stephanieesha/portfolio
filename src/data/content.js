@@ -138,6 +138,7 @@ export const skillGroups = [
   { label: 'Leadership', items: ['Test Strategy', 'Mentoring', 'Agile / Scrum (PSM I)'] },
   { label: 'Automation & Testing', items: ['Playwright', 'Cypress', 'Selenium', 'API Testing'] },
   { label: 'Languages & Frameworks', items: ['Python', 'TypeScript', 'JavaScript', 'React', 'SQL'] },
+  { label: 'Languages & Frameworks', items: ['DAM Migration','Security Testing', 'Adobe Experience Manager', 'Test Management',] },
   { label: 'Testing Practices', items: ['Manual Testing', 'Functional Testing', 'Accessibility Testing', 'Performance Testing'] },
 ]
 

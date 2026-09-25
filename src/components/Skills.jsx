@@ -1,7 +1,8 @@
 import { SiCypress, SiSelenium, SiPython, SiTypescript, SiJavascript, SiReact } from 'react-icons/si'
 import {
   FaClipboardList, FaChalkboardTeacher, FaSyncAlt, FaVial, FaTheaterMasks,
-  FaDatabase, FaClipboardCheck, FaCheckDouble, FaUniversalAccess, FaTachometerAlt,
+  FaClipboardCheck, FaCheckDouble, FaUniversalAccess, FaTachometerAlt,
+  FaExchangeAlt, FaShieldAlt, FaLayerGroup, FaTasks,
 } from 'react-icons/fa'
 import { skillGroups } from '../data/content'
 
@@ -15,6 +16,10 @@ const ICONS = {
   'JavaScript': SiJavascript,
   'React': SiReact,
   'SQL': FaDatabase,
+  'DAM Migration': FaExchangeAlt,
+  'Security Testing': FaShieldAlt,
+  'Adobe Experience Manager': FaLayerGroup,
+  'Test Management': FaTasks,
   'Test Strategy': FaClipboardList,
   'Mentoring': FaChalkboardTeacher,
   'Agile / Scrum (PSM I)': FaSyncAlt,
