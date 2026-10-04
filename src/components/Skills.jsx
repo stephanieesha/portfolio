@@ -18,7 +18,7 @@ const ICONS = {
   'SQL': FaDatabase,
   'DAM Migration': FaExchangeAlt,
   'Security Testing': FaShieldAlt,
-  'Adobe Experience Manager': FaLayerGroup,
+  'Mobile Testing': FaLayerGroup,
   'Test Management': FaTasks,
   'Test Strategy': FaClipboardList,
   'Mentoring': FaChalkboardTeacher,
