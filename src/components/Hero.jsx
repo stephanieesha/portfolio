@@ -7,7 +7,6 @@ export function SocialIconColumn() {
       <a href={social.github} target="_blank" rel="noreferrer" className="social-icon social-icon-dark"><FaGithub /></a>
       <a href={social.linkedin} target="_blank" rel="noreferrer" className="social-icon social-icon-light"><FaLinkedin /></a>
       <a href={social.youtube} target="_blank" rel="noreferrer" className="social-icon social-icon-red"><FaYoutube /></a>
-      <a href={social.twitter} target="_blank" rel="noreferrer" className="social-icon social-icon-dark"><FaXTwitter /></a>
       <a href={social.medium} target="_blank" rel="noreferrer" className="social-icon social-icon-dark"><FaMedium /></a>
     </div>
   )
