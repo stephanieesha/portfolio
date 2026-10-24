@@ -190,4 +190,7 @@
   .article-card-stacked { flex-direction: column; }
   .article-image { min-height: 200px; }
   .hero-headline { font-size: 42px; }
+  .header-inner { justify-content: center; padding: 28px 16px 12px; }
+  .header-nav { flex-wrap: wrap; justify-content: center; gap: 10px 22px; }
+  .header-nav a { font-size: 1.15rem; }
 }

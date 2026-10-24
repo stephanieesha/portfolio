@@ -164,6 +164,6 @@ export const social = {
   youtube: 'https://www.youtube.com/@stephanieayuba',
   twitter: 'https://twitter.com/_stephanieesha',
   email: 'stephanieesha@gmail.com',
-  resume: 'https://stephanieesha.github.io/resume/',
+  resume: '/Stephanie_Ayuba_Resume.pdf',
   location: 'F.C.T, Abuja, Nigeria',
 }

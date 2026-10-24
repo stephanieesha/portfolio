@@ -2,8 +2,9 @@ import { SiCypress, SiSelenium, SiPython, SiTypescript, SiJavascript, SiReact } 
 import {
   FaClipboardList, FaChalkboardTeacher, FaSyncAlt, FaVial, FaTheaterMasks,
   FaClipboardCheck, FaCheckDouble, FaUniversalAccess, FaTachometerAlt,
-  FaDatabase, FaExchangeAlt, FaShieldAlt, FaLayerGroup, FaTasks, FaSparkles
+  FaDatabase, FaExchangeAlt, FaShieldAlt, FaLayerGroup, FaTasks
 } from 'react-icons/fa'
+import { HiSparkles } from 'react-icons/hi'
 import { skillGroups } from '../data/content'
 
 const ICONS = {
@@ -16,7 +17,7 @@ const ICONS = {
   'JavaScript': SiJavascript,
   'React': SiReact,
   'SQL': FaDatabase,
-  'AI/LLM Testing': FaSparkles,
+  'AI/LLM Testing': HiSparkles,
   'Security Testing': FaShieldAlt,
   'Mobile Testing': FaLayerGroup,
   'Test Management': FaTasks,
